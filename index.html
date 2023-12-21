@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <!-- Include Google Analytics 4 (GA4) script -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA4_MEASUREMENT_ID');
+  </script>
+  <!-- Include Google Tag Manager (GTM) script -->
+  <!-- Replace GTM-XXXXXXX with your GTM container ID -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <h1>Shopping Website</h1>
+  </header>
+
+  <main>
+    <div class="product" data-product-id="1" data-product-name="Product 1" data-product-price="10.99">
+      <h2>Product 1</h2>
+      <p>$10.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-product-id="2" data-product-name="Product 2" data-product-price="19.99">
+      <h2>Product 2</h2>
+      <p>$19.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </main>
+
+  <aside>
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
